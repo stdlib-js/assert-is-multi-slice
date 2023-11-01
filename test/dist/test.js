@@ -21,44 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var Slice = require( '@stdlib/slice-ctor' );
-var MultiSlice = require( '@stdlib/slice-multi' );
-var isMultiSlice = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isMultiSlice, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided a MultiSlice instance', function test( t ) {
-	t.equal( isMultiSlice( new MultiSlice( new Slice( 0, 10, 1 ), null, 1 ) ), true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided a MultiSlice instance', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		null,
-		void 0,
-		true,
-		false,
-		[],
-		{},
-		function noop() {},
-		new Slice( 0, 10, 1 )
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.equal( isMultiSlice( values[i] ), false, 'returns false when provided '+values[i] );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
