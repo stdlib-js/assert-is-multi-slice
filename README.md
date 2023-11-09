@@ -35,14 +35,30 @@ limitations under the License.
 
 > Test if a value is a [`MultiSlice`][@stdlib/slice/multi].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-multi-slice
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-multi-slice@esm/index.mjs';
+var isMultiSlice = require( '@stdlib/assert-is-multi-slice' );
 ```
 
 #### isMultiSlice( value )
@@ -50,7 +66,7 @@ import isMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-multi-
 Tests if a value is a [`MultiSlice`][@stdlib/slice/multi].
 
 ```javascript
-import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
+var MultiSlice = require( '@stdlib/slice-multi' );
 
 var s = new MultiSlice();
 
@@ -68,15 +84,10 @@ var bool = isMultiSlice( s );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
-import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
-import isMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-multi-slice@esm/index.mjs';
+```javascript
+var Slice = require( '@stdlib/slice-ctor' );
+var MultiSlice = require( '@stdlib/slice-multi' );
+var isMultiSlice = require( '@stdlib/assert-is-multi-slice' );
 
 var out = isMultiSlice( new MultiSlice() );
 // returns true
@@ -89,10 +100,6 @@ out = isMultiSlice( {} );
 
 out = isMultiSlice( null );
 // returns false
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -102,6 +109,13 @@ out = isMultiSlice( null );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-slice`][@stdlib/assert/is-slice]</span><span class="delimiter">: </span><span class="description">test if a value is a Slice object.</span>
+-   <span class="package-name">[`@stdlib/slice-multi`][@stdlib/slice/multi]</span><span class="delimiter">: </span><span class="description">multi-slice constructor.</span>
 
 </section>
 
@@ -116,7 +130,7 @@ out = isMultiSlice( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -176,7 +190,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-multi-slice/main/LICENSE
 
-[@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi/tree/esm
+[@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-slice]: https://github.com/stdlib-js/assert-is-slice
+
+<!-- </related-links> -->
 
 </section>
 
