@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-multi-slice@esm/index.mjs';
+import isMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-multi-slice@v0.2.1-esm/index.mjs';
 ```
 
 #### isMultiSlice( value )
@@ -76,7 +76,7 @@ var bool = isMultiSlice( s );
 
 import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
 import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
-import isMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-multi-slice@esm/index.mjs';
+import isMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-multi-slice@v0.2.1-esm/index.mjs';
 
 var out = isMultiSlice( new MultiSlice() );
 // returns true
