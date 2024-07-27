@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-multi-slice@deno/mod.js';
+import isMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-multi-slice@v0.2.2-deno/mod.js';
 ```
 
 #### isMultiSlice( value )
@@ -71,7 +71,7 @@ var bool = isMultiSlice( s );
 ```javascript
 import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
 import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@deno/mod.js';
-import isMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-multi-slice@deno/mod.js';
+import isMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-multi-slice@v0.2.2-deno/mod.js';
 
 var out = isMultiSlice( new MultiSlice() );
 // returns true
